@@ -4,7 +4,9 @@ import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-mdx"
-const postTemplate = () => {
+const postTemplate = ({ pageContext }) => {
+  console.log(pageContext)
+
   return <div>this is a post template</div>
 }
 
